@@ -1,0 +1,73 @@
+# ===========================
+# Go Build & Cache
+# ===========================
+# Compiled binary executables
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+# Go build artifacts
+/bin/
+/build/
+/dist/
+*.log
+
+# Go workspace cache
+*.a
+*.o
+*.obj
+*.lo
+*.la
+
+# Go temporary test files
+*.cover
+*.prof
+
+# ===========================
+# Local Data Files
+# ===========================
+# Project-specific runtime data (like tasktracker/db.json)
+*.db
+*.sqlite
+*.sqlite3
+*.json
+!go.sum  # Keep go.sum
+
+# ===========================
+# Environment / Config Files
+# ===========================
+.env
+.env.*
+*.yaml
+*.yml
+config.json
+
+# ===========================
+# IDE / Editor Files
+# ===========================
+# VS Code
+.vscode/
+# JetBrains (GoLand, IntelliJ)
+.idea/
+# Vim / Neovim
+*.swp
+*.swo
+# Emacs
+*~
+# Mac / Linux system files
+.DS_Store
+Thumbs.db
+
+# ===========================
+# Custom project ignores
+# ===========================
+# Ignore binaries (like `task-cli`, `tskt`, etc.)
+tasktracker/task-cli
+tasktracker/tskt
+
+# Ignore local db
+tasktracker/db.json
